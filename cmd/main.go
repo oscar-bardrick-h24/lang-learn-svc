@@ -125,6 +125,7 @@ func main() {
 		&net.TCPAddr{IP: net.ParseIP(defaultHost), Port: appPort},
 		version,
 		environment,
+		// obviously hardcoding JWT secret is not secure, just for demo purposes
 		auth.NewJWTTool("secretKey", 12*time.Hour, appName, uuidTool),
 		uuidTool,
 		domain.NewService(
