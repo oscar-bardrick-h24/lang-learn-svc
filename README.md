@@ -8,7 +8,7 @@ I'm very sorry but I didnt quite manage to finish this in time. Most of the key 
   1. the app is written in a manner that makes testing easy
   2. I know how to test and i understand the importance of testing
 
-  One of he largest shortcomings is that the error handling is not comprehensive or consistent. I realise this, unfortunately I didnt get the time to fix this
+  One of he largest shortcomings is that the error handling is not comprehensive or consistent. I realise this, unfortunately I didnt get the time to fix this.
 
   ## Testing
 
@@ -17,9 +17,9 @@ I'm very sorry but I didnt quite manage to finish this in time. Most of the key 
 
   ## Design
 
-  I always try follow the community standards for package structuring/naming as set out in (this extremely useful resource)[https://github.com/golang-standards/project-layout]
+  I always try follow the community standards for package structuring/naming as set out in [this extremely useful resource](https://github.com/golang-standards/project-layout)
 
-  I have always admired (Matt Ryer's style)[https://pace.dev/blog/2018/05/09/how-I-write-http-services-after-eight-years.html] of writing Go web apps for it's simplicity and cleanliness. It's a design that I believe takes the principle of KISS seriously and makes writing, testing and maintaining web-services a pleasure. This is the design I use to guide me.
+  I have always admired [Matt Ryer's style](https://pace.dev/blog/2018/05/09/how-I-write-http-services-after-eight-years.html) of writing Go web apps for it's simplicity and cleanliness. It's a design that I believe takes the principle of KISS seriously and makes writing, testing and maintaining web-services a pleasure. This is the design I use to guide me.
 
   the General idea is:
   - pkg main: main.go that collects app configuration from the enviroment and uses those values to construct app dependencies and inject them into the App type
