@@ -7,6 +7,6 @@ type UserCourse struct {
 	CourseID       string    `json:"course_id"`
 	ActiveLessonID string    `json:"active_lesson_id"`
 	Completed      bool      `json:"completed"`
-	CreatedAt      time.Time `json:"created_at"`
-	UpdatedAt      time.Time `json:"updated_At"`
+	CreatedAt      time.Time `json:"created_at,omitempty"`
+	UpdatedAt      time.Time `json:"updated_at,omitempty"`
 }

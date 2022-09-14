@@ -13,8 +13,8 @@ type User struct {
 	LastName   string    `json:"last_name"`
 	ProfilePic string    `json:"profile_pic"`
 	Password   string    `json:"-"`
-	CreatedAt  time.Time `json:"created_at"`
-	UpdatedAt  time.Time `json:"updated_At"`
+	CreatedAt  time.Time `json:"created_at,omitempty"`
+	UpdatedAt  time.Time `json:"updated_at,omitempty"`
 }
 
 type userPatchableAttributes struct {
