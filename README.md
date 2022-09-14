@@ -2,7 +2,11 @@
 
 I'm very sorry but I didnt quite manage to finish this in time. Most of the key functionality is there but some things are very rough around the edges. I started a new job last week so as you can probably imagine I've unfortunately been pretty overloaded and didnt manage to find enough time to properly do the task justice. I am very keen on working at Babbel though so I hope that you'll still consider me despite the shortcomings of this piece of work. I wrote this very quickly and there are, as you will see, some issues which I simply didn't have time to address. I just hope I will get a chance to discuss those in a follow-up interview.
 
+## Data Modeling Flaw
+
  In the past I've primarily worked with and am most comfortable with MySQL, so I originally started building the service around a MySQL backend. However midway through I switched to Postgres since the task description mentioned it was preferred and I wanted to exploit the ARRAY type. After converting the code to be Postgres compatible I realised that the `github.com/lib/pq` driver does not support advanced Postgres types like ARRAY and that I would have to use `github.com/jackc/pgx`. The issue with that was that pgx has a much different interface which would've required bigger changes that I wasn't sure whether I'd have time to complete. As such the final design is a bit of a mish mash between the original MySQL design and a Postgres design using the JSON type for the courses lesson_list. Hopefully you will give me the opportunity to discuss what is wrong with this and also some of the added flexibility it potentially delivers.
+
+## Testing
 
  Although there wasnt time to fully cover the module in tests, I've tried to write a reasonable amount to show that:
   1. the app is written in a manner that makes testing easy
@@ -10,10 +14,11 @@ I'm very sorry but I didnt quite manage to finish this in time. Most of the key 
 
   One of he largest shortcomings is that the error handling is not comprehensive or consistent. I realise this, unfortunately I didnt get the time to fix this.
 
-  ## Testing
+  unit tests can be run with:
+  `make unit-test`
 
-  unit tests can be run with `make unit-test`
-  integration tests can be run with `make integration-test` once `docker-compose up` has succeeded and containers are ready for action
+  once `docker-compose up` has succeeded and containers are ready for action integration tests can be run with:
+  `make integration-test`
 
   ## Design
 
