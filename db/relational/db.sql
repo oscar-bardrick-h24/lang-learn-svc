@@ -49,7 +49,6 @@ CREATE TABLE courses (
 CREATE TABLE course_lessons (
     course_id VARCHAR(36),
     lesson_id VARCHAR(36),
-    lesson_number INTEGER NOT NULL,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (course_id, lesson_id),
@@ -62,7 +61,6 @@ CREATE TABLE user_courses (
     user_id VARCHAR(36) NOT NULL,
     course_id VARCHAR(36) NOT NULL,
     active_lesson_number VARCHAR(36) NOT NULL,
-    completed BOOLEAN NOT NULL DEFAULT FALSE,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (user_id, course_id),
