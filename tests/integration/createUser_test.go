@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/domain"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/domain"
 	"github.com/stretchr/testify/assert"
 )
 

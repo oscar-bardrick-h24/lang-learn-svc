@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/contextual"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/contextual"
 )
 
 func (app *App) MiddlewareAuth(next http.Handler) http.Handler {

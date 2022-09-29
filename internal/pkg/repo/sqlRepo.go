@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/domain"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/domain"
 	"github.com/sirupsen/logrus"
 )
 

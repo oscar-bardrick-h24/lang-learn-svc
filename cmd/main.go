@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/app"
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/auth"
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/domain"
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/passwords"
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/repo"
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/uuidv4"
+	"github.com/OJOMB/lang-learn-svc/internal/app"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/auth"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/domain"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/passwords"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/repo"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/uuidv4"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 

@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/contextual"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/contextual"
 	jsonpatch "github.com/evanphx/json-patch"
 	"github.com/sirupsen/logrus"
 )

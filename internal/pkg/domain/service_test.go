@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/contextual"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/contextual"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 )

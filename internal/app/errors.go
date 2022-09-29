@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/domain"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/domain"
 )
 
 type appErr struct {

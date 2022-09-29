@@ -3,7 +3,7 @@ package app
 import (
 	"net/http"
 
-	"github.com/OJOMB/graffiti-berlin-svc/internal/pkg/contextual"
+	"github.com/OJOMB/lang-learn-svc/internal/pkg/contextual"
 )
 
 const reqIDHeader = "X-Request-ID"

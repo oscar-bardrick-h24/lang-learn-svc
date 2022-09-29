@@ -1,4 +1,4 @@
-module github.com/OJOMB/graffiti-berlin-svc
+module github.com/OJOMB/lang-learn-svc
 
 go 1.15
 
